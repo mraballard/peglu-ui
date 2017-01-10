@@ -22,6 +22,30 @@
   </head>
   <body ng-controller="mainController as main">
 
+    <nav id="main-nav" class="navbar navbar-static-top">
+      <div class="container-fluid vertical-center">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PEGLU</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">HOME</a></li>
+            <li class=""><a href="#">MEMBERSHIP</a></li>
+            <li class=""><a href="#">ABOUT</a></li>
+            <li class=""><a href="#">FAQS</a></li>
+            <li class=""><a href="#">CONTACT US</a></li>
+            <li class=""><a href="#">SHOP</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <ui-view></ui-view>
 
   </body>
