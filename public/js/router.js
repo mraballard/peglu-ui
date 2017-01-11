@@ -32,7 +32,7 @@
         })
         .state('store', {
           url: '/store',
-          templateUrl: '../partials/store.html',
+          templateUrl: '../partials/_store.html',
         })
         .state('item', {
           url: '/item',

@@ -1,15 +1,77 @@
+
 .yellow {
   background-color: yellow;
 }
-#main-nav {
-  height: 70px;
+.height {
+  height: 400px;
+}
+body {
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Catamaran', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+strong {
+  font-weight: 900;
+}
+.main-button {
+  background-color: white;
+  border: 2px solid blue;
+  color: blue;
+  padding: 20px;
+  width: 150px;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: 0.1s background-color linear, 0.1s color linear;
+  -moz-transition: 0.1s background-color linear, 0.1s color linear;
+  -o-transition: 0.1s background-color linear, 0.1s color linear;
+  transition: 0.1s background-color linear, 0.1s color linear;
+}
+.main-button:hover {
+  background-color: blue;
+  color: white;
 }
 
 .vertical-center {
-  padding: 0;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+.full-width {
+  width: 100%;
+}
+.font-light {
+  font-weight: 200;
+}
+.font-bold {
+  font-weight: 800;
+}
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+.flex-row-section {
+  display: flex;
+  flex-direction: row;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.space-between {
+  justify-content: space-between;
+}
+.no-radius {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.margin-bottom {
+  margin-bottom: 20px;
 }

@@ -3,7 +3,7 @@
   .controller('mainController', mainController);
 
 
-  mainController.$inject = ['$scope', '$http', '$state', '$cart'];
+  // mainController.$inject = ['$scope', '$http', '$state', '$cart'];
 
   function mainController($scope, $http, $state, $cart) {
     var rootUrl = 'http://localhost:4000/';
