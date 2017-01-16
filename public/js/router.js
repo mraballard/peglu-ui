@@ -12,39 +12,39 @@
       $stateProvider
         .state('welcome', {
           url: '/',
-          templateUrl: '../partials/_welcome.html',
+          templateUrl: 'public/partials/_welcome.html',
         })
         .state('signup', {
           url: '/signup',
-          templateUrl: '../partials/_signup.html'
+          templateUrl: 'public/partials/_signup.html'
         })
         .state('login', {
           url: '/login',
-          templateUrl: '../partials/_login.html'
+          templateUrl: 'public/partials/_login.html'
         })
         .state('update', {
           url: '/update',
-          templateUrl: '../partials/_update.html'
+          templateUrl: 'public/partials/_update.html'
         })
         .state('home', {
           url: '/home',
-          templateUrl: '../partials/_home.html',
+          templateUrl: 'public/partials/_home.html',
         })
         .state('store', {
           url: '/store',
-          templateUrl: '../partials/store.html',
+          templateUrl: 'public/partials/store.html',
         })
         .state('item', {
           url: '/item',
-          templateUrl: '../partials/_item.html',
+          templateUrl: 'public/partials/_item.html',
         })
         .state('cart', {
           url: '/cart',
-          templateUrl: '../partials/_cart.html',
+          templateUrl: 'public/partials/_cart.html',
         })
         .state('order', {
           url: '/order',
-          templateUrl: '../partials/_order.html',
+          templateUrl: 'public/partials/_order.html',
         })
       }
 
