@@ -13,3 +13,9 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.horizontal-collapse {
+    height: 70px;
+}
+.navbar-collapse.in {
+  overflow-y: hidden;
+}

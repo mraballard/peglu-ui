@@ -2,21 +2,23 @@
 <html ng-app="peglu">
   <head>
     <meta charset="utf-8">
-    <link href="public/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="public/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <title>PEGLU</title>
 
     <!--*********************************************-->
     <!--**************ANGULAR/JS/JQUERY**************-->
     <!--*********************************************-->
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="public/js/font-awesome.js"></script>
+    <script src='public/js/app.js'></script>
     <script src='public/js/router.js'></script>
     <script src='public/js/cart.js'></script>
-    <script src='public/js/app.js'></script>
   </head>
   <body ng-controller="mainController as main">
 
@@ -24,7 +26,7 @@
       <div class="navbar-inner">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -32,7 +34,7 @@
             </button>
             <a class="navbar-brand" href="#">PEGLU</a>
           </div>
-          <div class="navbar-collapse collapse">
+          <div class="navbar-collapse collapse" uib-collapse="isNavCollapsed">
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="#">HOME</a></li>
               <li class=""><a href="#">MEMBERSHIP</a></li>

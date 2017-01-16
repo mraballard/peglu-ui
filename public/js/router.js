@@ -1,5 +1,5 @@
 (function() {
-  angular.module('peglu' , ['ui.router'])
+  angular.module('peglu')
     .config(AuthRouter);
 
 

@@ -1,5 +1,5 @@
 (function(){
-  angular.module('peglu')
+  angular.module('peglu', ['ui.router', 'ui.bootstrap', 'ngAnimate', 'ngSanitize'])
   .controller('mainController', mainController);
 
 
@@ -9,6 +9,11 @@
     var rootUrl = 'http://localhost:4000/';
     var self = this;
 
+
+// STYLES / BOOTSTRAP
+  $scope.isNavCollapsed = true;
+  $scope.isCollapsed = false;
+  $scope.isCollapsedHorizontal = false;
   }
 
 })();
