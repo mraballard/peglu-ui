@@ -1,10 +1,12 @@
+/*  ANGULAR BOOTSTRAP */
 .horizontal-collapse {
     height: 70px;
 }
 .navbar-collapse.in {
   overflow-y: hidden;
 }
-
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+/* END ANGULAR BOOTSTRAP  */
 
 .yellow {
   background-color: yellow;
@@ -30,8 +32,8 @@ strong {
 }
 .main-button {
   background-color: white;
-  border: 2px solid blue;
-  color: blue;
+  border: 2px solid rgb(7, 24, 94);;
+  color: rgb(7, 24, 94);
   padding: 20px;
   width: 150px;
   margin: 0 auto;
@@ -42,10 +44,26 @@ strong {
   transition: 0.1s background-color linear, 0.1s color linear;
 }
 .main-button:hover {
-  background-color: blue;
+  background-color: rgb(7, 24, 94);
   color: white;
 }
-
+.input-box {
+  font-size: 0.8em;
+}
+.btn-input {
+  letter-spacing: 2px;
+  border: 1px solid rgb(7, 24, 94);
+  background: rgb(7, 24, 94);
+  color: white;
+}
+.btn-input:hover, .btn-input:focus {
+  background: rgb(7, 80, 94);
+  border: 1px solid rgb(7, 24, 94);
+  color: white;
+}
+.btn-input:active {
+  background: rgb(7, 80, 94);
+}
 .vertical-center {
   position: relative;
   top: 50%;
@@ -82,11 +100,20 @@ strong {
   border-radius: 0;
   -webkit-appearance: none;
 }
+.padding-20 {
+  padding: 20px;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-top-80 {
+  margin-top: 80px;
+}
 .margin-bottom-20 {
   margin-bottom: 20px;
 }
-.margin-bottom-80 {
-  margin-bottom: 80px;
+.margin-bottom-120 {
+  margin-bottom: 120px;
 }
 .fa-circle {
   visibility: hidden;
