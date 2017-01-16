@@ -12,40 +12,70 @@
     <!--*********************************************-->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js">
-
-    </script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="public/js/font-awesome.js"></script>
     <script src='public/js/router.js'></script>
     <script src='public/js/cart.js'></script>
     <script src='public/js/app.js'></script>
   </head>
   <body ng-controller="mainController as main">
 
-    <nav id="main-nav" class="navbar navbar-static-top">
-      <div class="container-fluid vertical-center">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">PEGLU</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">HOME</a></li>
-            <li class=""><a href="#">MEMBERSHIP</a></li>
-            <li class=""><a href="#">ABOUT</a></li>
-            <li class=""><a href="#">FAQS</a></li>
-            <li class=""><a href="#">CONTACT US</a></li>
-            <li class=""><a href="#">SHOP</a></li>
-          </ul>
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">PEGLU</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">HOME</a></li>
+              <li class=""><a href="#">MEMBERSHIP</a></li>
+              <li class=""><a href="#">ABOUT</a></li>
+              <li class=""><a href="#">FAQS</a></li>
+              <li class=""><a href="#">CONTACT US</a></li>
+              <li class=""><a href="#">SHOP</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
 
     <ui-view></ui-view>
 
+    <div id="social-media"class="row ">
+      <h4 class="text-center">Connect:</h4>
+      <div  class="flex-row-section justify-center">
+        <span class="fa-stack fa-2x">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-2x">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-instagram fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-2x">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-envelope-o fa-stack-1x"></i>
+        </span>
+        <span class="fa-stack fa-2x">
+          <i class="fa fa-circle-thin fa-stack-2x"></i>
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x"></i>
+        </span>
+      </div>
+    </div>
+
+    <footer>
+
+    </footer>
   </body>
-</html>
+  </html>
